@@ -1,0 +1,140 @@
+/* 动态盒 */
+.share-dynamic-wrap{
+    margin:32px 16px;
+    min-height: stretch;
+    position: relative;
+    background: #fff;
+    object-fit: contain;
+    box-shadow: 0 0 10px 0 rgba(59, 49, 9, 0.1);
+}
+/* 动态背景底圈圈 */
+.circle-bg1{
+    width:109px;
+    height: 50px;
+    background:url('../images/circle1.png') no-repeat;
+    background-size: cover;
+    position: absolute;
+    top:0;
+    right: 0;
+}
+/* 动态分享head */
+.share-dynamic-head{
+    width: 100%;
+    height: 124px;
+    padding:20px;
+    box-sizing: border-box;
+    background: url('../images/share-dynamic-top.png') no-repeat;
+    background-size: cover;
+}
+/* 头像 */
+.avatar-image{
+    position:relative; 
+    overflow: hidden;
+}
+.avatar-image img{
+    width: 100%;
+    height: 100%;
+}
+.avatar-image.img-size40{
+    width: 40px;
+    height:40px;
+    border-radius:50%;
+}
+.avatar-image.img-size24{
+    width: 24px;
+    height:24px;
+    border-radius:50%;
+}
+.avatar-image i{
+    position: absolute;
+    right:0;
+    bottom:0;
+}
+.avatar-image .avatar-image-talent {
+    background: url('../images/icon-img-talent.png') no-repeat;
+    background-size: cover;
+}
+.avatar-image .avatar-image-expert {
+    background: url('../images/icon-img-expert.png') no-repeat;
+    background-size: cover;
+}
+/* 用户信息 */
+.user-info span{
+    display: block;
+    color: #fff;
+}
+.user-info span.name{
+    display: block;
+    color: #fff;
+}
+.dynamic-explain{
+    padding-top:19px;
+    color: #fff;
+}
+
+/* 内容public */
+.share-dynamic-center{
+    padding:20px;
+}
+.dynamic-content{
+    padding-top:12px;
+}
+.dynamic-text20{
+    font-size: 20px;
+    color: #323232;
+    line-height: 1.5;
+}
+.dynamic-text16{
+    font-size:16px;
+    color: #323232;
+    line-height: 1.5;
+    padding-top:8px;
+}
+.dynamic-text14{
+    font-size:14px;
+    color: #323232;
+}
+.dynamic-text12{
+    font-size:12px;
+    color: #999;
+}
+/* 内容 pdf */
+.dynamic-file{
+    padding:12px;
+    height: 60px;
+    border-radius: 2px;
+    background-color: #f7f7f7;
+    border: solid 0.5px #e5e5e5;
+}
+.dynamic-file .left{
+    width: 36px;
+    height: 36px;
+}
+.dynamic-file .left.pdf{
+    background: url('../images/icon-img-pdf.png') no-repeat;
+    background-size: cover;
+}
+.dynamic-file .left.vote{
+    background: url('../images/icon-img-vote.png') no-repeat;
+    background-size: cover;
+}
+/* 内容 img九宫格*/
+.img-wrap{
+    display: block;;
+    width: 31%;
+    padding-bottom: 31%;
+    float: left;
+    background: #f5f5f5;
+    overflow: hidden;
+    position:relative;
+    box-sizing: border-box;
+    margin:1%;
+}
+.img-wrap img{
+    width:100%;
+    min-height: 100%;
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+}
+.img-wrap.wfirst{width:100%;}

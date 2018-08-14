@@ -1,3 +1,4 @@
+
 body,html {
     min-width: 320px;
     font-family:  Microsoft YaHei,SF UI Text,Arial,PingFang SC,Hiragino Sans GB,WenQuanYi Micro Hei,sans-serif;
@@ -45,4 +46,41 @@ a {
 }
 li {
     list-style: none;
+}
+.f7f7f7{
+    background: #f7f7f7;
+}
+.fx{
+    display: flex
+}
+.fx-ag{
+    display: flex;
+    align-items: center
+}
+.fx-sk{
+    flex-shrink: 0
+}
+.fx-fx{
+    flex:1;
+}
+.pl10{
+    padding-left:10px;
+}
+.pl14{
+    padding-left:14px;
+}
+.mt20{
+    margin-top: 20px;
+}
+.mt10{
+    margin-top: 10px;
+}
+.mt4{
+    margin-top: 4px;
+}
+.fs12{
+    font-size: 12px;
+}
+.fs14{
+    font-size: 14px;
 }
