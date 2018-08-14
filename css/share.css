@@ -1,0 +1,111 @@
+.share .content {
+    position: relative;
+    min-height: 491px;
+}
+.share .content .bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    margin:  0 auto;
+    background: url(../images/share_bg.png) no-repeat;
+    background-size: 100%;
+    z-index: 1;
+}
+.content .type {
+    position: relative;
+    display: flex;
+    padding: 22px 0px 16px 25px;
+    z-index: 2;
+}
+.content .type .quotes {
+    width: 22px;
+}
+.content .type img,
+/* .content .banner .tag img, */
+.content .banner .img {
+    width: 100%;
+}
+.content .type .text {
+    width: 124px;
+    margin-left: 12px;
+}
+.content .type .text span {
+    display: block;
+}
+.content .banner {
+    position: relative;
+    margin: 0 25px;
+    z-index: 2;
+}
+.content .banner .img {
+    z-index: 1;
+    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+.content .banner .tag{
+    position: absolute;
+    right: -8px;
+    top: -10px;
+    z-index: 2;
+}
+.content .title h1 {
+    position: relative;
+    color: #323232;
+    font-size: 22px;
+    line-height: 1.45;
+    padding: 0 25px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    margin-top: 20px;
+    z-index: 2;
+}
+
+.content .expert,
+.content .time {
+    position: relative;
+    z-index: 2; 
+    margin: 0 25px;
+    padding-bottom: 20px;
+}
+.content .expert .tag,
+.content .time .tag {
+    color: #999999;
+    font-size: 13px;
+    display: block;
+}
+.content .expert .names,
+.content .time .concrete-time {
+    color: #323232;
+    font-size: 16px;
+    display: block;
+    height: 14px;
+    line-height: 1;
+    margin-top: 10px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 25px 30px 25px;
+}
+.footer .text {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    color: #323232;
+}
+.footer .text .tip {
+    height: 14px;
+    font-size: 14px;
+    line-height: 1;
+}
+.footer .text .tip span {
+    display: block;
+    font-size: 12px;
+    height: 12px;
+    line-height: 1;
+    margin-top: 8px;
+}
