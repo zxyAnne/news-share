@@ -4,49 +4,24 @@
 .share .content {
     position: relative;
     min-height: 491px;
-}
-.share .content .bg{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    margin:  0 auto;
-    min-height:inherit;
     background: url(../images/share_bg.png) no-repeat;
-    background-size: 100%;
-    z-index: 1;
-}
-.content .type,
-.content .banner,
-.content .title,
-.content .expert,
-.content .time {
-    position: relative;
-    z-index: 2;
+    background-size: cover;
 }
 
 .content .type {
-    display: flex;
-    padding: 22px 0px 16px 25px;
-}
-.content .type .quotes {
-    width: 22px;
+    width: 50%;
+    padding: 32px 0px 29px 25px;
 }
 .content .type img,
-/* .content .banner .tag img, */
-.content .banner .img {
+.content .banner .img,
+.footer .text .logo img {
     width: 100%;
-}
-.content .type .text {
-    width: 124px;
-    margin-left: 12px;
 }
 .content .type .text span {
     display: block;
 }
 .content .banner {
+    position: relative;
     margin: 0 25px;
 }
 .content .banner .img {
@@ -55,9 +30,10 @@
     border-radius: 8px;
 }
 .content .banner .tag{
+    width: 21%;
     position: absolute;
-    right: -8px;
-    top: -10px;
+    right: -2.5%;
+    top: -6%;
     z-index: 2;
 }
 .content .title h1 {
@@ -73,7 +49,12 @@
 .content .expert,
 .content .time {
     margin: 0 25px;
+}
+.content .expert {
     padding-bottom: 20px;
+}
+.content .time {
+    padding-bottom: 30px;
 }
 .content .expert .tag,
 .content .time .tag {
@@ -92,26 +73,38 @@
 }
 
 .footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 25px 30px 25px;
+    position: relative;
     background-color: #fff;
+    padding: 20px 25px 30px 25px;
+    overflow: hidden;
 }
 .footer .text {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    position: relative;
     color: #323232;
+    height: 88px;
 }
 .footer .text .tip {
     height: 14px;
     font-size: 14px;
     line-height: 1;
 }
+.footer .text .logo {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 56%;
+} 
 .footer .text .tip span {
     display: block;
     font-size: 12px;
     height: 12px;
     line-height: 1;
     margin-top: 8px;
+}
+/* 课程 */
+.share .course {
+    min-height: 433px;
+}
+.course .expert {
+    padding-bottom: 30px;
 }
