@@ -47,8 +47,14 @@ a {
 li {
     list-style: none;
 }
+.hidden{
+    display: none;
+}
 .f7f7f7{
     background: #f7f7f7;
+}
+.pk-text-blue{
+    color: #4a90e2;
 }
 .fx{
     display: flex
