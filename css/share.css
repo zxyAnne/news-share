@@ -104,6 +104,8 @@
 /* 课程 */
 .share .course {
     min-height: 433px;
+    background: url(../images/share_bg2.png) no-repeat;
+    background-size: cover;
 }
 .course .expert {
     padding-bottom: 30px;
