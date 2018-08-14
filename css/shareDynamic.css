@@ -1,0 +1,332 @@
+/* 动态盒 */
+.share-dynamic-wrap{
+    margin:32px 16px;
+    min-height: stretch;
+    position: relative;
+    background: #fff;
+    object-fit: contain;
+    box-shadow: 0 0 10px 0 rgba(59, 49, 9, 0.1);
+}
+/* 动态背景底圈圈 */
+.circle-bg{
+    position: absolute;
+    max-width: 768px;
+    top: 0;
+    width: 100%;
+}
+.circle-bg1{
+    width:109px;
+    height: 50px;
+    background:url('../images/circle1.png') no-repeat;
+    background-size: contain;
+    position: absolute;
+    top:0;
+    right: 0;
+}
+.circle-bg2{
+    width:64px;
+    height: 64px;
+    background:url('../images/circle23.png') no-repeat;
+    background-size: contain;
+    position: absolute;
+    top:70px;
+    left: 0;
+}
+.circle-bg3{
+    width:28px;
+    height: 28px;
+    background:url('../images/circle23.png') no-repeat;
+    background-size: contain;
+    position: absolute;
+    top:270px;
+    right: 0;
+}
+.position-set4{
+    position: fixed;
+    bottom: 141px;
+    width: 100%;
+    max-width: 768px;;
+}
+.circle-bg4{
+    width:20px;
+    height: 50px;
+    background:url('../images/circle4.png') no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: 141px;
+    left: 0;
+}
+.position-set5{
+    position: fixed;
+    bottom: 141px;
+    width: 100%;
+    max-width: 768px;;
+}
+.circle-bg5{
+    width: 28px;
+    height: 62px;
+    background:url('../images/circle5.png') no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+}
+.position-set6{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 768px;;
+}
+.circle-bg6{
+    width: 186px;
+    height: 99px;
+    background:url('../images/circle6.png') no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* 动态分享head */
+.share-dynamic-head{
+    width: 100%;
+    padding:20px;
+    box-sizing: border-box;
+    background:#5d5f6c;
+    background-size: cover;
+    position: relative;
+}
+.share-dynamic-head::after{
+    content: '';
+    position: absolute;
+    bottom: -18px;
+    left:30px;
+    width: 0;
+    height: 0;
+    border-width:9px;
+    border-style: solid;
+    border-color: #5d5f6c transparent transparent transparent;
+}
+.share-dynamic-head-bg{
+    width: 164px;
+    height: 100%;
+    background:#5d5f6c url('../images/share-dynamic-head.png') no-repeat;
+    background-size: cover;
+    position: absolute;
+    right:0;
+    top:0;
+}
+/* 头像 */
+.avatar-image{
+    position:relative; 
+    overflow: hidden;
+}
+.avatar-image img{
+    width: 100%;
+    height: 100%;
+}
+.avatar-image.img-size40{
+    width: 40px;
+    height:40px;
+    border-radius:50%;
+}
+.avatar-image.img-size24{
+    width: 24px;
+    height:24px;
+    border-radius:50%;
+}
+.avatar-image i{
+    position: absolute;
+    right:0;
+    bottom:0;
+}
+.avatar-image .avatar-image-talent {
+    background: url('../images/icon-img-talent.png') no-repeat;
+    background-size: cover;
+}
+.avatar-image .avatar-image-expert {
+    background: url('../images/icon-img-expert.png') no-repeat;
+    background-size: cover;
+}
+/* 用户信息 */
+.user-info span{
+    display: block;
+    color: #fff;
+}
+.user-info span.name{
+    display: block;
+    color: #fff;
+}
+.dynamic-explain{
+    padding-top:19px;
+    color: #fff;
+}
+
+/* 内容public */
+.share-dynamic-center{
+    padding:20px;
+}
+.dynamic-content{
+    padding-top:12px;
+}
+.dynamic-text20{
+    font-size: 20px;
+    color: #323232;
+    line-height: 1.5;
+}
+.dynamic-text16{
+    font-size:16px;
+    color: #323232;
+    line-height: 1.5;
+    padding-top:8px;
+}
+.dynamic-text14{
+    font-size:14px;
+    color: #323232;
+}
+.dynamic-text12{
+    font-size:12px;
+    color: #999;
+}
+/* 内容 pdf */
+.dynamic-file{
+    padding:12px;
+    height: 60px;
+    border-radius: 2px;
+    background-color: #f7f7f7;
+    border: solid 0.5px #e5e5e5;
+}
+.dynamic-file .left{
+    width: 36px;
+    height: 36px;
+}
+.dynamic-file .left.pdf{
+    background: url('../images/icon-img-pdf.png') no-repeat;
+    background-size: cover;
+}
+.dynamic-file .left.vote{
+    background: url('../images/icon-img-vote.png') no-repeat;
+    background-size: cover;
+}
+/* 内容 img九宫格*/
+.img-wrap{
+    display: block;;
+    width: 31%;
+    padding-bottom: 31%;
+    float: left;
+    background: #f5f5f5;
+    overflow: hidden;
+    position:relative;
+    box-sizing: border-box;
+    margin:1%;
+}
+.img-wrap img{
+    width:100%;
+    min-height: 100%;
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+}
+.img-wrap.wfirst{width:100%;}
+
+/* 内容 图片+文字*/
+.common-item-map{
+    width: 100%;
+    height: 172px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative
+}
+.common-item-map img{
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    min-height: 172px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/* 内容 语音*/
+.question-audio{
+    position: relative;
+    width: 100%;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+}
+.question-audio .question-audio-box{
+    width:100%;
+    height:44px;
+   
+    display: flex;
+    align-items: center;
+    flex: 1;
+    position: relative;
+    font-size: 0;
+   
+}
+.question-audio .question-audio-box img{
+    width: 236px;
+}
+.question-audio .question-audio-info{
+    width: 236px;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left:0;
+
+    display: flex;
+    align-items: center;
+}
+.question-audio .question-audio-info .icon-play{
+    width:12px;
+    margin-left: 19px;
+}
+.question-audio .question-audio-info .show-price,.question-audio .question-audio-info .time{
+    font-size: 12px;
+    color: #323232;
+}
+.question-audio .question-audio-info .time{
+    position: absolute;
+    right:14px;
+}
+.question-audio .question-audio-info.question-audio-info-free .show-price,.question-audio .question-audio-info.question-audio-info-free .time{
+    color: #fff;
+}
+
+/* 内容 支付解锁*/
+.unlock-pay-unit{
+    max-width: 180px;
+}
+.unlock-pay{
+    padding: 0 14px 0 14px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 22px;
+    background-color: rgba(255, 200, 0, 0.05);
+    border: solid 0.5px #ffc800;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.unlock-pay .icon-unlock{
+    width: 20px;
+    height: 20px;
+    background: url('../images/unlock.png') no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+.unlock-pay .unlock-pay-text{
+    font-size: 15px;
+    color: #ffc800;
+    margin-left:8px;
+}
+.unlock-pay-from{
+    font-size: 14px;
+    color: #999999;
+    margin-top:40px;
+}
